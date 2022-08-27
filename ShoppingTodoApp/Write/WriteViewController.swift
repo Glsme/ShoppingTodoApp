@@ -13,15 +13,16 @@ class WriteViewController: BaseViewController {
     
     override func loadView() {
         self.view = mainView
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
     override func configureUI() {
+        view.backgroundColor = .white
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
     }

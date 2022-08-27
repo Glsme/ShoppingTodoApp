@@ -38,7 +38,7 @@ class CalendarViewController: BaseViewController {
         print(#function)
         
         let vc = WriteViewController()
-        transViewController(ViewController: vc, transitionType: .present)
+        transViewController(ViewController: vc, transitionType: .presentFullScreenNavigation)
     }
     
 }
