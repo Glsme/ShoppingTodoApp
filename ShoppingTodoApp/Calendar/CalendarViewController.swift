@@ -29,6 +29,13 @@ class CalendarViewController: BaseViewController {
         mainView.shoppingListTableView.delegate = self
         mainView.shoppingListTableView.dataSource = self
         mainView.shoppingListTableView.register(ShoppingListTableViewCell.self, forCellReuseIdentifier: ShoppingListTableViewCell.reuseIdentifier)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(addButtonClicked))
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
+    }
+    
+    @objc func addButtonClicked() {
+        print(#function)
     }
     
 }
