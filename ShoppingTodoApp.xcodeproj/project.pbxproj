@@ -18,6 +18,9 @@
 		857A17D428B9B90E0048D81A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D328B9B90E0048D81A /* TabBarViewController.swift */; };
 		857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D628B9BA4A0048D81A /* BaseViewController.swift */; };
 		857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D828B9BBFD0048D81A /* BaseView.swift */; };
+		857A17DC28B9D6AA0048D81A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17DB28B9D6AA0048D81A /* SnapKit */; };
+		857A17DE28B9D6AA0048D81A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */; };
+		857A17E128B9D6BD0048D81A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17E028B9D6BD0048D81A /* FSCalendar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +44,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857A17DC28B9D6AA0048D81A /* SnapKit in Frameworks */,
+				857A17E128B9D6BD0048D81A /* FSCalendar in Frameworks */,
+				857A17DE28B9D6AA0048D81A /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +144,11 @@
 			dependencies = (
 			);
 			name = ShoppingTodoApp;
+			packageProductDependencies = (
+				857A17DB28B9D6AA0048D81A /* SnapKit */,
+				857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */,
+				857A17E028B9D6BD0048D81A /* FSCalendar */,
+			);
 			productName = ShoppingTodoApp;
 			productReference = 857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -166,6 +177,10 @@
 				Base,
 			);
 			mainGroup = 857A17A228B9B0AF0048D81A;
+			packageReferences = (
+				857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 857A17AC28B9B0AF0048D81A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -418,6 +433,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		857A17DB28B9D6AA0048D81A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = "SnapKit-Dynamic";
+		};
+		857A17E028B9D6BD0048D81A /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 857A17A328B9B0AF0048D81A /* Project object */;
 }
