@@ -20,6 +20,6 @@ class GreenColorLabel: UILabel {
     
     func setView() {
         layer.cornerRadius = 5
-//        view.backgroundColor =
+        backgroundColor = .lightGreen
     }
 }
