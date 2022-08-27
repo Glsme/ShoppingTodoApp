@@ -18,9 +18,9 @@
 		857A17D428B9B90E0048D81A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D328B9B90E0048D81A /* TabBarViewController.swift */; };
 		857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D628B9BA4A0048D81A /* BaseViewController.swift */; };
 		857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D828B9BBFD0048D81A /* BaseView.swift */; };
-		857A17DC28B9D6AA0048D81A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17DB28B9D6AA0048D81A /* SnapKit */; };
-		857A17DE28B9D6AA0048D81A /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */; };
 		857A17E128B9D6BD0048D81A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17E028B9D6BD0048D81A /* FSCalendar */; };
+		857A17E328B9D6DE0048D81A /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17E228B9D6DE0048D81A /* CalendarView.swift */; };
+		857A17E928B9D9A20048D81A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17E828B9D9A20048D81A /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +37,7 @@
 		857A17D328B9B90E0048D81A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		857A17D628B9BA4A0048D81A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		857A17D828B9BBFD0048D81A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		857A17E228B9D6DE0048D81A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,9 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				857A17DC28B9D6AA0048D81A /* SnapKit in Frameworks */,
 				857A17E128B9D6BD0048D81A /* FSCalendar in Frameworks */,
-				857A17DE28B9D6AA0048D81A /* SnapKit-Dynamic in Frameworks */,
+				857A17E928B9D9A20048D81A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				857A17CC28B9B3A70048D81A /* CalendarViewController.swift */,
+				857A17E228B9D6DE0048D81A /* CalendarView.swift */,
 			);
 			path = Calendar;
 			sourceTree = "<group>";
@@ -145,9 +146,8 @@
 			);
 			name = ShoppingTodoApp;
 			packageProductDependencies = (
-				857A17DB28B9D6AA0048D81A /* SnapKit */,
-				857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */,
 				857A17E028B9D6BD0048D81A /* FSCalendar */,
+				857A17E828B9D9A20048D81A /* SnapKit */,
 			);
 			productName = ShoppingTodoApp;
 			productReference = 857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */;
@@ -178,8 +178,8 @@
 			);
 			mainGroup = 857A17A228B9B0AF0048D81A;
 			packageReferences = (
-				857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */,
 				857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */,
+				857A17E728B9D9A20048D81A /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 857A17AC28B9B0AF0048D81A /* Products */;
 			projectDirPath = "";
@@ -213,6 +213,7 @@
 				857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */,
 				857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */,
 				857A17D428B9B90E0048D81A /* TabBarViewController.swift in Sources */,
+				857A17E328B9D6DE0048D81A /* CalendarView.swift in Sources */,
 				857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */,
 				857A17C928B9B3900048D81A /* SettingViewController.swift in Sources */,
 				857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */,
@@ -368,8 +369,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -379,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -396,8 +399,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -407,7 +412,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -435,14 +440,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
 		857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -451,23 +448,26 @@
 				minimumVersion = 2.0.0;
 			};
 		};
+		857A17E728B9D9A20048D81A /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		857A17DB28B9D6AA0048D81A /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-		857A17DD28B9D6AA0048D81A /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 857A17DA28B9D6AA0048D81A /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		857A17E028B9D6BD0048D81A /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */;
 			productName = FSCalendar;
+		};
+		857A17E828B9D9A20048D81A /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 857A17E728B9D9A20048D81A /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
