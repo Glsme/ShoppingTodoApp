@@ -21,7 +21,7 @@ class CalendarView: BaseView {
     
     let shoppingListTableView: UITableView = {
         let view = UITableView()
-        
+        view.rowHeight = 120
         return view
     }()
     

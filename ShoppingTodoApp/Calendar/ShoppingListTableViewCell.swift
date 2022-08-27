@@ -6,27 +6,31 @@
 //
 
 import UIKit
+import SnapKit
 
 class ShoppingListTableViewCell: UITableViewCell {
     
     let checkButton: UIButton = {
         let view = UIButton()
+        view.tintColor = .black
+        view.setImage(UIImage(systemName: "checkmark.square"), for: .normal)
         
         return view
     }()
     
-    let titleLabel: UILabel = {
-        let view = UILabel()
+    let titleLabel: GreenColorLabel = {
+        let view = GreenColorLabel()
         return view
     }()
     
-    let dateLabel: UILabel = {
-        let view = UILabel()
+    let dateLabel: GreenColorLabel = {
+        let view = GreenColorLabel()
         return view
     }()
     
     let imagePreview: UIImageView = {
         let view = UIImageView()
+        view.backgroundColor = .lightGray
         return view
     }()
     
@@ -42,10 +46,36 @@ class ShoppingListTableViewCell: UITableViewCell {
     }
 
     func configureUI() {
-        
+        [checkButton, titleLabel, dateLabel, imagePreview].forEach {
+            self.addSubview($0)
+        }
     }
     
     func setConstraints() {
+        checkButton.snp.makeConstraints { make in
+            make.leading.equalTo(self.safeAreaLayoutGuide)
+            make.height.width.equalTo(80)
+            make.centerY.equalTo(self.snp.centerY)
+        }
         
+        titleLabel.snp.makeConstraints { make in
+            make.top.equalTo(checkButton.snp.top)
+            make.leading.equalTo(checkButton.snp.trailing)
+            make.height.equalTo(40)
+            make.width.equalTo(self).multipliedBy(0.45)
+        }
+        
+        dateLabel.snp.makeConstraints { make in
+            make.top.equalTo(titleLabel.snp.bottom).offset(5)
+            make.leading.equalTo(titleLabel.snp.leading)
+            make.height.equalTo(titleLabel.snp.height)
+            make.width.equalTo(titleLabel.snp.width)
+        }
+        
+        imagePreview.snp.makeConstraints { make in
+            make.trailing.equalTo(self.safeAreaLayoutGuide.snp.trailing).offset(-10)
+            make.height.width.equalTo(100)
+            make.centerY.equalTo(self.safeAreaLayoutGuide.snp.centerY)
+        }
     }
 }
