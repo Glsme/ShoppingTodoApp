@@ -19,6 +19,7 @@
 		8526CCA028BA0EAB0053D3C5 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9F28BA0EAB0053D3C5 /* ImageCollectionViewCell.swift */; };
 		8526CCA328BA11AF0053D3C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8526CCA228BA11AF0053D3C5 /* .gitignore */; };
 		8526CCA628BA11C90053D3C5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA528BA11C90053D3C5 /* APIKey.swift */; };
+		8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */; };
 		857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17AE28B9B0AF0048D81A /* AppDelegate.swift */; };
 		857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17B028B9B0AF0048D81A /* SceneDelegate.swift */; };
 		857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A17B428B9B0AF0048D81A /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		8526CC9F28BA0EAB0053D3C5 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		8526CCA228BA11AF0053D3C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8526CCA528BA11C90053D3C5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
+		8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAPIManager.swift; sourceTree = "<group>"; };
 		857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857A17AE28B9B0AF0048D81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857A17B028B9B0AF0048D81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 			path = Key;
 			sourceTree = "<group>";
 		};
+		8526CCA728BA13C50053D3C5 /* APIManager */ = {
+			isa = PBXGroup;
+			children = (
+				8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */,
+			);
+			path = APIManager;
+			sourceTree = "<group>";
+		};
 		857A17A228B9B0AF0048D81A = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		857A17AD28B9B0AF0048D81A /* ShoppingTodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8526CCA728BA13C50053D3C5 /* APIManager */,
 				8526CCA428BA11BD0053D3C5 /* Key */,
 				8526CC9A28BA0A670053D3C5 /* ImageSearch */,
 				8526CC9528B9FCFA0053D3C5 /* Write */,
@@ -303,6 +314,7 @@
 				857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */,
 				8526CC9228B9F5420053D3C5 /* UIColor+Extension.swift in Sources */,
 				857A17C928B9B3900048D81A /* SettingViewController.swift in Sources */,
+				8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */,
 				857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */,
 				8526CCA028BA0EAB0053D3C5 /* ImageCollectionViewCell.swift in Sources */,
 			);
