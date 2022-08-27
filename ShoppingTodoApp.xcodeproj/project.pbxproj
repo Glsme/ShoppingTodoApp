@@ -17,6 +17,7 @@
 		857A17CD28B9B3A70048D81A /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17CC28B9B3A70048D81A /* CalendarViewController.swift */; };
 		857A17D428B9B90E0048D81A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D328B9B90E0048D81A /* TabBarViewController.swift */; };
 		857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D628B9BA4A0048D81A /* BaseViewController.swift */; };
+		857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17D828B9BBFD0048D81A /* BaseView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		857A17CC28B9B3A70048D81A /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		857A17D328B9B90E0048D81A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		857A17D628B9BA4A0048D81A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		857A17D828B9BBFD0048D81A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				857A17D628B9BA4A0048D81A /* BaseViewController.swift */,
+				857A17D828B9BBFD0048D81A /* BaseView.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				857A17D428B9B90E0048D81A /* TabBarViewController.swift in Sources */,
 				857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */,
 				857A17C928B9B3900048D81A /* SettingViewController.swift in Sources */,
+				857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
