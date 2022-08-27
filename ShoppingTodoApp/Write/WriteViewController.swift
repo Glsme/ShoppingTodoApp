@@ -22,12 +22,16 @@ class WriteViewController: BaseViewController {
     }
     
     override func configureUI() {
-        view.backgroundColor = .white
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
+        mainView.selectButton.addTarget(self, action: #selector(selectButtonClicekd), for: .touchUpInside)
     }
     
     @objc func closeButtonClicked() {
         dismiss(animated: true)
+    }
+    
+    @objc func selectButtonClicekd() {
+        transViewController(ViewController: ImageSearchViewController(), transitionType: .presentFullScreenNavigation)
     }
 }
