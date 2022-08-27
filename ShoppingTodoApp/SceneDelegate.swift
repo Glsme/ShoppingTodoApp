@@ -26,6 +26,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let tabBarController = TabBarViewController()
         tabBarController.setViewControllers([firstVC, secondVC, thirdVC], animated: true)
         tabBarController.tabBar.tintColor = UIColor.systemBlue
+        tabBarController.tabBar.backgroundColor = .lightGray
         
         if let items = tabBarController.tabBar.items {
             items[0].image = UIImage(systemName: "calendar")
