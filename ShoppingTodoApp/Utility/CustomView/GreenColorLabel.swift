@@ -19,7 +19,8 @@ class GreenColorLabel: UILabel {
     }
     
     func setView() {
-        layer.cornerRadius = 5
+        layer.cornerRadius = 10
         backgroundColor = .lightGreen
+        clipsToBounds = true
     }
 }
