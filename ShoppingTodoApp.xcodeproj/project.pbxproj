@@ -22,6 +22,7 @@
 		8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */; };
 		8526CCAC28BA166C0053D3C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8526CCAB28BA166C0053D3C5 /* Alamofire */; };
 		8526CCAF28BA16910053D3C5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8526CCAE28BA16910053D3C5 /* SwiftyJSON */; };
+		8526CCB128BA17160053D3C5 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCB028BA17160053D3C5 /* EndPoint.swift */; };
 		857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17AE28B9B0AF0048D81A /* AppDelegate.swift */; };
 		857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17B028B9B0AF0048D81A /* SceneDelegate.swift */; };
 		857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A17B428B9B0AF0048D81A /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		8526CCA228BA11AF0053D3C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		8526CCA528BA11C90053D3C5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverAPIManager.swift; sourceTree = "<group>"; };
+		8526CCB028BA17160053D3C5 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
 		857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857A17AE28B9B0AF0048D81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857A17B028B9B0AF0048D81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				8526CCA528BA11C90053D3C5 /* APIKey.swift */,
+				8526CCB028BA17160053D3C5 /* EndPoint.swift */,
 			);
 			path = Key;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				857A17CD28B9B3A70048D81A /* CalendarViewController.swift in Sources */,
 				8526CC8C28B9F2330053D3C5 /* ShoppingListTableViewCell.swift in Sources */,
 				857A17CB28B9B3990048D81A /* SearchViewController.swift in Sources */,
+				8526CCB128BA17160053D3C5 /* EndPoint.swift in Sources */,
 				8526CC9728B9FD120053D3C5 /* WriteViewController.swift in Sources */,
 				857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */,
 				8526CC9C28BA0A840053D3C5 /* ImageSearchViewController.swift in Sources */,
