@@ -36,6 +36,9 @@ class CalendarViewController: BaseViewController {
     
     @objc func addButtonClicked() {
         print(#function)
+        
+        let vc = WriteViewController()
+        transViewController(ViewController: vc, transitionType: .present)
     }
     
 }

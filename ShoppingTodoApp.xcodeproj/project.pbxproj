@@ -12,6 +12,8 @@
 		8526CC8F28B9F4A30053D3C5 /* GreenColorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC8E28B9F4A30053D3C5 /* GreenColorLabel.swift */; };
 		8526CC9228B9F5420053D3C5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9128B9F5420053D3C5 /* UIColor+Extension.swift */; };
 		8526CC9428B9FB430053D3C5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9328B9FB430053D3C5 /* UIViewController+Extension.swift */; };
+		8526CC9728B9FD120053D3C5 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9628B9FD120053D3C5 /* WriteViewController.swift */; };
+		8526CC9928B9FD2C0053D3C5 /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9828B9FD2C0053D3C5 /* WriteView.swift */; };
 		857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17AE28B9B0AF0048D81A /* AppDelegate.swift */; };
 		857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17B028B9B0AF0048D81A /* SceneDelegate.swift */; };
 		857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A17B428B9B0AF0048D81A /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 		8526CC8E28B9F4A30053D3C5 /* GreenColorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenColorLabel.swift; sourceTree = "<group>"; };
 		8526CC9128B9F5420053D3C5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8526CC9328B9FB430053D3C5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		8526CC9628B9FD120053D3C5 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
+		8526CC9828B9FD2C0053D3C5 /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857A17AE28B9B0AF0048D81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857A17B028B9B0AF0048D81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		8526CC9528B9FCFA0053D3C5 /* Write */ = {
+			isa = PBXGroup;
+			children = (
+				8526CC9628B9FD120053D3C5 /* WriteViewController.swift */,
+				8526CC9828B9FD2C0053D3C5 /* WriteView.swift */,
+			);
+			path = Write;
+			sourceTree = "<group>";
+		};
 		857A17A228B9B0AF0048D81A = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +111,7 @@
 		857A17AD28B9B0AF0048D81A /* ShoppingTodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8526CC9528B9FCFA0053D3C5 /* Write */,
 				8526CC8828B9F1070053D3C5 /* Protocol */,
 				857A17D528B9BA350048D81A /* Utility */,
 				857A17D028B9B75C0048D81A /* Extension */,
@@ -239,9 +253,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8526CC9928B9FD2C0053D3C5 /* WriteView.swift in Sources */,
 				857A17CD28B9B3A70048D81A /* CalendarViewController.swift in Sources */,
 				8526CC8C28B9F2330053D3C5 /* ShoppingListTableViewCell.swift in Sources */,
 				857A17CB28B9B3990048D81A /* SearchViewController.swift in Sources */,
+				8526CC9728B9FD120053D3C5 /* WriteViewController.swift in Sources */,
 				857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */,
 				8526CC9428B9FB430053D3C5 /* UIViewController+Extension.swift in Sources */,
 				857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */,
