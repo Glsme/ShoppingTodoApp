@@ -17,6 +17,8 @@
 		8526CC9C28BA0A840053D3C5 /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9B28BA0A840053D3C5 /* ImageSearchViewController.swift */; };
 		8526CC9E28BA0ACD0053D3C5 /* ImageSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9D28BA0ACD0053D3C5 /* ImageSearchView.swift */; };
 		8526CCA028BA0EAB0053D3C5 /* ImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CC9F28BA0EAB0053D3C5 /* ImageCollectionViewCell.swift */; };
+		8526CCA328BA11AF0053D3C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8526CCA228BA11AF0053D3C5 /* .gitignore */; };
+		8526CCA628BA11C90053D3C5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA528BA11C90053D3C5 /* APIKey.swift */; };
 		857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17AE28B9B0AF0048D81A /* AppDelegate.swift */; };
 		857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17B028B9B0AF0048D81A /* SceneDelegate.swift */; };
 		857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A17B428B9B0AF0048D81A /* Main.storyboard */; };
@@ -44,6 +46,8 @@
 		8526CC9B28BA0A840053D3C5 /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		8526CC9D28BA0ACD0053D3C5 /* ImageSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchView.swift; sourceTree = "<group>"; };
 		8526CC9F28BA0EAB0053D3C5 /* ImageCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		8526CCA228BA11AF0053D3C5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		8526CCA528BA11C90053D3C5 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingTodoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		857A17AE28B9B0AF0048D81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		857A17B028B9B0AF0048D81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,9 +112,18 @@
 			path = ImageSearch;
 			sourceTree = "<group>";
 		};
+		8526CCA428BA11BD0053D3C5 /* Key */ = {
+			isa = PBXGroup;
+			children = (
+				8526CCA528BA11C90053D3C5 /* APIKey.swift */,
+			);
+			path = Key;
+			sourceTree = "<group>";
+		};
 		857A17A228B9B0AF0048D81A = {
 			isa = PBXGroup;
 			children = (
+				8526CCA228BA11AF0053D3C5 /* .gitignore */,
 				857A17AD28B9B0AF0048D81A /* ShoppingTodoApp */,
 				857A17AC28B9B0AF0048D81A /* Products */,
 			);
@@ -127,6 +140,7 @@
 		857A17AD28B9B0AF0048D81A /* ShoppingTodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				8526CCA428BA11BD0053D3C5 /* Key */,
 				8526CC9A28BA0A670053D3C5 /* ImageSearch */,
 				8526CC9528B9FCFA0053D3C5 /* Write */,
 				8526CC8828B9F1070053D3C5 /* Protocol */,
@@ -257,6 +271,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8526CCA328BA11AF0053D3C5 /* .gitignore in Resources */,
 				857A17BB28B9B0B10048D81A /* LaunchScreen.storyboard in Resources */,
 				857A17B828B9B0B10048D81A /* Assets.xcassets in Resources */,
 				857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */,
@@ -284,6 +299,7 @@
 				8526CC8A28B9F1180053D3C5 /* ReusableProtocol.swift in Sources */,
 				857A17E328B9D6DE0048D81A /* CalendarView.swift in Sources */,
 				8526CC8F28B9F4A30053D3C5 /* GreenColorLabel.swift in Sources */,
+				8526CCA628BA11C90053D3C5 /* APIKey.swift in Sources */,
 				857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */,
 				8526CC9228B9F5420053D3C5 /* UIColor+Extension.swift in Sources */,
 				857A17C928B9B3900048D81A /* SettingViewController.swift in Sources */,

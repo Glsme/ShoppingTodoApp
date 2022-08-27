@@ -30,7 +30,7 @@ class ImageSearchViewController: BaseViewController {
     }
     
     @objc func closeButtonClicked() {
-        
+        dismiss(animated: true)
     }
 }
 
