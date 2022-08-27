@@ -24,6 +24,13 @@ class CalendarViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         print(#function, "CalendarViewController")
     }
+    
+    override func configureUI() {
+        mainView.shoppingListTableView.delegate = self
+        mainView.shoppingListTableView.dataSource = self
+        mainView.shoppingListTableView.register(ShoppingListTableViewCell.self, forCellReuseIdentifier: ShoppingListTableViewCell.reuseIdentifier)
+    }
+    
 }
 
 extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
@@ -32,7 +39,9 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingListTableViewCell.reuseIdentifier, for: indexPath) as? ShoppingListTableViewCell else { return UITableViewCell() }
+        cell.backgroundColor = .cyan
+        return cell
     }
     
     
