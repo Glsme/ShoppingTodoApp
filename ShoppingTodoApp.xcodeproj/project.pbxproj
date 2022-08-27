@@ -20,6 +20,8 @@
 		8526CCA328BA11AF0053D3C5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 8526CCA228BA11AF0053D3C5 /* .gitignore */; };
 		8526CCA628BA11C90053D3C5 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA528BA11C90053D3C5 /* APIKey.swift */; };
 		8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8526CCA828BA13D60053D3C5 /* NaverAPIManager.swift */; };
+		8526CCAC28BA166C0053D3C5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8526CCAB28BA166C0053D3C5 /* Alamofire */; };
+		8526CCAF28BA16910053D3C5 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 8526CCAE28BA16910053D3C5 /* SwiftyJSON */; };
 		857A17AF28B9B0AF0048D81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17AE28B9B0AF0048D81A /* AppDelegate.swift */; };
 		857A17B128B9B0AF0048D81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 857A17B028B9B0AF0048D81A /* SceneDelegate.swift */; };
 		857A17B628B9B0AF0048D81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 857A17B428B9B0AF0048D81A /* Main.storyboard */; };
@@ -71,7 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8526CCAC28BA166C0053D3C5 /* Alamofire in Frameworks */,
 				857A17E128B9D6BD0048D81A /* FSCalendar in Frameworks */,
+				8526CCAF28BA16910053D3C5 /* SwiftyJSON in Frameworks */,
 				857A17E928B9D9A20048D81A /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -235,6 +239,8 @@
 			packageProductDependencies = (
 				857A17E028B9D6BD0048D81A /* FSCalendar */,
 				857A17E828B9D9A20048D81A /* SnapKit */,
+				8526CCAB28BA166C0053D3C5 /* Alamofire */,
+				8526CCAE28BA16910053D3C5 /* SwiftyJSON */,
 			);
 			productName = ShoppingTodoApp;
 			productReference = 857A17AB28B9B0AF0048D81A /* ShoppingTodoApp.app */;
@@ -267,6 +273,8 @@
 			packageReferences = (
 				857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */,
 				857A17E728B9D9A20048D81A /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8526CCAA28BA166C0053D3C5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				8526CCAD28BA16910053D3C5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 857A17AC28B9B0AF0048D81A /* Products */;
 			projectDirPath = "";
@@ -540,6 +548,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8526CCAA28BA166C0053D3C5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		8526CCAD28BA16910053D3C5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/WenchaoD/FSCalendar";
@@ -559,6 +583,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8526CCAB28BA166C0053D3C5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8526CCAA28BA166C0053D3C5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		8526CCAE28BA16910053D3C5 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8526CCAD28BA16910053D3C5 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		857A17E028B9D6BD0048D81A /* FSCalendar */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 857A17DF28B9D6BD0048D81A /* XCRemoteSwiftPackageReference "FSCalendar" */;

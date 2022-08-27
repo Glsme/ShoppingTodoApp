@@ -11,4 +11,5 @@ class NaverAPIManager {
     static let shared = NaverAPIManager()
     
     private init() { }
+    
 }
