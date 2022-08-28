@@ -24,9 +24,9 @@ class WriteViewController: BaseViewController {
     override func configureUI() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
-        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "저장", style: .plain, target: self, action: #selector(saveButtonClicked))
         self.navigationItem.rightBarButtonItem?.tintColor = .black
-        mainView.selectButton.addTarget(self, action: #selector(saveButtonClicked), for: .touchUpInside)
+        mainView.selectButton.addTarget(self, action: #selector(selectButtonClicekd), for: .touchUpInside)
     }
     
     @objc func closeButtonClicked() {
