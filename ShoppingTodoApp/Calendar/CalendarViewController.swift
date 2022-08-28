@@ -68,5 +68,13 @@ extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let task = tasks?[indexPath.row] {
+                ShoppingModelRepository.shared.delete(task: task)
+            }
+        }
+        
+        tableView.deleteRows(at: [indexPath], with: .fade)
+    }
 }

@@ -25,4 +25,16 @@ class ShoppingModelRepository {
             localRealm.add(task)
         }
     }
+    
+    func delete(task: ShoppingModel) {
+        try! localRealm.write {
+            localRealm.delete(task)
+        }
+    }
+    
+    func deleteAll() {
+        try! localRealm.write {
+            localRealm.deleteAll()
+        }
+    }
 }
