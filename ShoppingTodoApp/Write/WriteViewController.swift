@@ -24,11 +24,17 @@ class WriteViewController: BaseViewController {
     override func configureUI() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
-        mainView.selectButton.addTarget(self, action: #selector(selectButtonClicekd), for: .touchUpInside)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
+        mainView.selectButton.addTarget(self, action: #selector(saveButtonClicked), for: .touchUpInside)
     }
     
     @objc func closeButtonClicked() {
         dismiss(animated: true)
+    }
+    
+    @objc func saveButtonClicked() {
+        
     }
     
     @objc func selectButtonClicekd() {

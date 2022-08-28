@@ -30,6 +30,8 @@ class ImageSearchViewController: BaseViewController {
     override func configureUI() {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "xmark"), style: .plain, target: self, action: #selector(closeButtonClicked))
         self.navigationItem.leftBarButtonItem?.tintColor = .black
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(title: "선택", style: .plain, target: self, action: #selector(selectButtonClicekd))
+        self.navigationItem.rightBarButtonItem?.tintColor = .black
         
         mainView.imageCollectionView.delegate = self
         mainView.imageCollectionView.dataSource = self
@@ -40,6 +42,10 @@ class ImageSearchViewController: BaseViewController {
     
     @objc func closeButtonClicked() {
         dismiss(animated: true)
+    }
+    
+    @objc func selectButtonClicekd() {
+        
     }
     
     func fetchImage(query: String) {

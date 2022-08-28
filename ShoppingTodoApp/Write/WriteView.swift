@@ -26,15 +26,19 @@ class WriteView: BaseView {
         return view
     }()
     
-    let titleLabel: GreenColorLabel = {
-        let view = GreenColorLabel()
+    let titleTextField: UITextField = {
+        let view = UITextField()
+        view.layer.borderColor = UIColor.lightGray.cgColor
+        view.layer.borderWidth = 3
+        view.layer.cornerRadius = 10
+        view.textAlignment = .center
         
         return view
     }()
     
     let detailTextView: UITextView = {
         let view = UITextView()
-        view.layer.borderColor = UIColor.green.cgColor
+        view.layer.borderColor = UIColor.lightGray.cgColor
         view.layer.borderWidth = 3
         view.layer.cornerRadius = 10
         
@@ -50,7 +54,7 @@ class WriteView: BaseView {
     }
     
     override func configure() {
-        [writedImageView, selectButton, titleLabel, detailTextView].forEach {
+        [writedImageView, selectButton, titleTextField, detailTextView].forEach {
             self.addSubview($0)
         }
     }
@@ -68,7 +72,7 @@ class WriteView: BaseView {
             make.height.width.equalTo(50)
         }
         
-        titleLabel.snp.makeConstraints { make in
+        titleTextField.snp.makeConstraints { make in
             make.centerX.equalTo(self.safeAreaLayoutGuide)
             make.height.equalTo(44)
             make.width.equalTo(writedImageView.snp.width)
@@ -79,7 +83,7 @@ class WriteView: BaseView {
             make.centerX.equalTo(self.safeAreaLayoutGuide)
             make.leading.trailing.equalTo(writedImageView)
             make.bottom.equalTo(self.safeAreaLayoutGuide)
-            make.top.equalTo(titleLabel.snp.bottom).offset(20)
+            make.top.equalTo(titleTextField.snp.bottom).offset(20)
         }
     }
 }
