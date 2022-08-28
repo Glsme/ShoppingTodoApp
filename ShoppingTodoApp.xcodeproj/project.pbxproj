@@ -39,6 +39,7 @@
 		857A17E928B9D9A20048D81A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 857A17E828B9D9A20048D81A /* SnapKit */; };
 		85A504D528BBA51E00EABE32 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 85A504D428BBA51E00EABE32 /* Realm */; };
 		85A504D728BBA51E00EABE32 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85A504D628BBA51E00EABE32 /* RealmSwift */; };
+		85A504DA28BBA54000EABE32 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504D928BBA54000EABE32 /* RealmModel.swift */; };
 		85E8426928BB5AB800B90B4F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85E8426828BB5AB800B90B4F /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,7 @@
 		857A17D628B9BA4A0048D81A /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		857A17D828B9BBFD0048D81A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		857A17E228B9D6DE0048D81A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		85A504D928BBA54000EABE32 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		857A17AD28B9B0AF0048D81A /* ShoppingTodoApp */ = {
 			isa = PBXGroup;
 			children = (
+				85A504D828BBA53100EABE32 /* Realm */,
 				8526CCA728BA13C50053D3C5 /* APIManager */,
 				8526CCA428BA11BD0053D3C5 /* Key */,
 				8526CC9A28BA0A670053D3C5 /* ImageSearch */,
@@ -227,6 +230,14 @@
 				857A17D828B9BBFD0048D81A /* BaseView.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		85A504D828BBA53100EABE32 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				85A504D928BBA54000EABE32 /* RealmModel.swift */,
+			);
+			path = Realm;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,6 +347,7 @@
 				8526CCA628BA11C90053D3C5 /* APIKey.swift in Sources */,
 				857A17D728B9BA4A0048D81A /* BaseViewController.swift in Sources */,
 				8526CC9228B9F5420053D3C5 /* UIColor+Extension.swift in Sources */,
+				85A504DA28BBA54000EABE32 /* RealmModel.swift in Sources */,
 				857A17C928B9B3900048D81A /* SettingViewController.swift in Sources */,
 				8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */,
 				857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */,
