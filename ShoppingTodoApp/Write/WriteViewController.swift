@@ -43,6 +43,16 @@ class WriteViewController: BaseViewController {
     }
     
     @objc func selectButtonClicekd() {
-        transViewController(ViewController: ImageSearchViewController(), transitionType: .presentFullScreenNavigation)
+        let vc = ImageSearchViewController()
+        vc.delegate = self
+        
+        transViewController(ViewController: vc, transitionType: .presentFullScreenNavigation)
+    }
+}
+
+extension WriteViewController: SelectImageDelegate {
+    func sendImageData(image: UIImage) {
+        print(#function)
+        mainView.writedImageView.image = image
     }
 }

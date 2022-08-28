@@ -15,6 +15,7 @@ class ImageSearchViewController: BaseViewController {
     var totalCount = 0
     var imageList: [String] = []
     
+    var delegate: SelectImageDelegate?
     var selectImage: UIImage?
     var selectIndexPath: IndexPath?
     
@@ -35,6 +36,7 @@ class ImageSearchViewController: BaseViewController {
         
         mainView.imageCollectionView.delegate = self
         mainView.imageCollectionView.dataSource = self
+        mainView.imageCollectionView.prefetchDataSource = self
         mainView.imageCollectionView.register(ImageCollectionViewCell.self, forCellWithReuseIdentifier: ImageCollectionViewCell.reuseIdentifier)
         
         mainView.imageSearchBar.delegate = self
@@ -45,7 +47,14 @@ class ImageSearchViewController: BaseViewController {
     }
     
     @objc func selectButtonClicekd() {
+        guard let selectImage = selectImage else {
+            print("selectImage is nil")
+            return
+        }
         
+        print(#function)
+        delegate?.sendImageData(image: selectImage)
+        dismiss(animated: true)
     }
     
     func fetchImage(query: String) {
