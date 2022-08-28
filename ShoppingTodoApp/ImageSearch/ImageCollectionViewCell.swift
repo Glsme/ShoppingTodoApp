@@ -12,7 +12,7 @@ class ImageCollectionViewCell: UICollectionViewCell {
     
     let searchedImageView: UIImageView = {
         let view = UIImageView()
-        view.backgroundColor = .green
+        view.backgroundColor = .darkGray
         return view
     }()
     
