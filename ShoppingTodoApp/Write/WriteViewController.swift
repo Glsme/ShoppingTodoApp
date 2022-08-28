@@ -39,6 +39,7 @@ class WriteViewController: BaseViewController {
         let task = ShoppingModel(shoppingTitle: title, date: Date(), check: false, content: mainView.detailTextView.text)
         ShoppingModelRepository.shared.write(task: task)
         
+        print("Save Succeed")
         dismiss(animated: true)
     }
     

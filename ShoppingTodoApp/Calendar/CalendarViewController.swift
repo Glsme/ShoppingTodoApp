@@ -25,11 +25,15 @@ class CalendarViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tasks = ShoppingModelRepository.shared.localRealm.objects(ShoppingModel.self)
         fetchRealm()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         print(#function, "CalendarViewController")
+        print("task count: \(tasks.count)")
+        
+        mainView.shoppingListTableView.reloadData()
     }
     
     override func configureUI() {
