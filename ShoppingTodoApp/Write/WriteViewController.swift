@@ -34,7 +34,12 @@ class WriteViewController: BaseViewController {
     }
     
     @objc func saveButtonClicked() {
+        guard let title = mainView.titleTextField.text, !mainView.titleTextField.text!.isEmpty else { return }
         
+        let task = ShoppingModel(shoppingTitle: title, date: Date(), check: false, content: mainView.detailTextView.text)
+        ShoppingModelRepository.shared.write(task: task)
+        
+        dismiss(animated: true)
     }
     
     @objc func selectButtonClicekd() {

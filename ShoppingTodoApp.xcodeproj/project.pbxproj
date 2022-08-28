@@ -40,6 +40,7 @@
 		85A504D528BBA51E00EABE32 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 85A504D428BBA51E00EABE32 /* Realm */; };
 		85A504D728BBA51E00EABE32 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85A504D628BBA51E00EABE32 /* RealmSwift */; };
 		85A504DA28BBA54000EABE32 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504D928BBA54000EABE32 /* RealmModel.swift */; };
+		85A504DC28BBA76300EABE32 /* ShoppingModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504DB28BBA76300EABE32 /* ShoppingModelRepository.swift */; };
 		85E8426928BB5AB800B90B4F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85E8426828BB5AB800B90B4F /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		857A17D828B9BBFD0048D81A /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		857A17E228B9D6DE0048D81A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		85A504D928BBA54000EABE32 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
+		85A504DB28BBA76300EABE32 /* ShoppingModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModelRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				85A504D928BBA54000EABE32 /* RealmModel.swift */,
+				85A504DB28BBA76300EABE32 /* ShoppingModelRepository.swift */,
 			);
 			path = Realm;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8526CC9928B9FD2C0053D3C5 /* WriteView.swift in Sources */,
+				85A504DC28BBA76300EABE32 /* ShoppingModelRepository.swift in Sources */,
 				857A17CD28B9B3A70048D81A /* CalendarViewController.swift in Sources */,
 				8526CC8C28B9F2330053D3C5 /* ShoppingListTableViewCell.swift in Sources */,
 				857A17CB28B9B3990048D81A /* SearchViewController.swift in Sources */,

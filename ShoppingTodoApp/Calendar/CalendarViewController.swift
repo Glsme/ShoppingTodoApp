@@ -6,10 +6,17 @@
 //
 
 import UIKit
+import RealmSwift
 
 class CalendarViewController: BaseViewController {
     
     let mainView = CalendarView()
+    var tasks: Results<ShoppingModel>! {
+        didSet {
+            mainView.shoppingListTableView.reloadData()
+            print("Success Reload: shoppingListTableView")
+        }
+    }
     
     override func loadView() {
         self.view = mainView
@@ -18,7 +25,7 @@ class CalendarViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(#function)
+        fetchRealm()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -41,16 +48,23 @@ class CalendarViewController: BaseViewController {
         transViewController(ViewController: vc, transitionType: .presentFullScreenNavigation)
     }
     
+    func fetchRealm() {
+        tasks = ShoppingModelRepository.shared.fetch()
+    }
+    
 }
 
 extension CalendarViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return tasks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ShoppingListTableViewCell.reuseIdentifier, for: indexPath) as? ShoppingListTableViewCell else { return UITableViewCell() }
-        cell.backgroundColor = .cyan
+        
+        cell.titleLabel.text = tasks[indexPath.row].shoppingTitle
+        cell.dateLabel.text = String(describing: tasks[indexPath.row].date)
+        
         return cell
     }
     
