@@ -41,6 +41,7 @@
 		85A504D728BBA51E00EABE32 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 85A504D628BBA51E00EABE32 /* RealmSwift */; };
 		85A504DA28BBA54000EABE32 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504D928BBA54000EABE32 /* RealmModel.swift */; };
 		85A504DC28BBA76300EABE32 /* ShoppingModelRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504DB28BBA76300EABE32 /* ShoppingModelRepository.swift */; };
+		85A504DE28BBB2DA00EABE32 /* SelectImageDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A504DD28BBB2DA00EABE32 /* SelectImageDelegate.swift */; };
 		85E8426928BB5AB800B90B4F /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 85E8426828BB5AB800B90B4F /* Kingfisher */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		857A17E228B9D6DE0048D81A /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		85A504D928BBA54000EABE32 /* RealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmModel.swift; sourceTree = "<group>"; };
 		85A504DB28BBA76300EABE32 /* ShoppingModelRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingModelRepository.swift; sourceTree = "<group>"; };
+		85A504DD28BBB2DA00EABE32 /* SelectImageDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				8526CC8928B9F1180053D3C5 /* ReusableProtocol.swift */,
+				85A504DD28BBB2DA00EABE32 /* SelectImageDelegate.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 				8526CCA928BA13D60053D3C5 /* NaverAPIManager.swift in Sources */,
 				857A17D928B9BBFD0048D81A /* BaseView.swift in Sources */,
 				8526CCA028BA0EAB0053D3C5 /* ImageCollectionViewCell.swift in Sources */,
+				85A504DE28BBB2DA00EABE32 /* SelectImageDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
